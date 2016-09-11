@@ -34,8 +34,8 @@ printf("The Levenshtein distance is %d\n",matrix[n][m]);
 float distance=matrix[n][m];
 float maxlength;
 float score;
-float n1=strlen(string1);
-float n2=strlen(string2);
+float n1=strlen(string1)-1;
+float n2=strlen(string2)-1;
 if(n1>n2)
     maxlength=n1;
 else
